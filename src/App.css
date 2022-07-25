@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: #232526;  
+  background: -webkit-linear-gradient(to right, #414345, #232526);  
+  background: linear-gradient(to right, #414345, #232526); 
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #232526;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.app-logo {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 36px;
+}
+
+p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.container-logo {
+  margin: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #606c88;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #606c88; 
+  background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  
+  background: linear-gradient(to right, #606c88, #3f4c6b); 
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #556270;
+}
+
+.todo-button.edit {
+  background: #556270;
+  background: -webkit-linear-gradient(to right, #FF6B6B, #556270); 
+  background: linear-gradient(to right, #556270, #FF6B6B); 
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: #948E99;  
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  
+  background: linear-gradient(to right, #2E1437, #948E99);
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: #485563;  
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  
+  background: linear-gradient(to right, #29323c, #485563);  
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: #283048; 
+  background: -webkit-linear-gradient(to right, #859398, #283048);  
+  background: linear-gradient(to right, #859398, #283048); 
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: #3C3B3F;  
+  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  
+  background: linear-gradient(to right, #605C3C, #3C3B3F);  
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
